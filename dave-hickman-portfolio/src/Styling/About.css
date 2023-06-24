@@ -3,7 +3,7 @@
     height: 100%;
 }
 
-.about-container {
+.about-container, .contact-container {
     margin: 15vh 10% 15vh;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@
   }
 
 
-.about-text-container p {
+.about-text-container p, .contact-text-container p {
     position: relative;
     font-size: 1.8rem;
     font-weight: 500;

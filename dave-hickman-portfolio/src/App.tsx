@@ -6,6 +6,7 @@ import Blur from "./Components/Blur";
 import Navbar from "./Components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About";
+import Contact from "./Pages/Contact";
 
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -29,6 +30,7 @@ function App() {
       <Routes>
       <Route path={`/`} element={<Homepage />}></Route>
       <Route path={`/about`} element={<About />}></Route>
+      <Route path={`/contact`} element={<Contact />}></Route>
       </Routes>
       <animated.div className="cursor" style={cursorAnimation}></animated.div>
       <Blur />
