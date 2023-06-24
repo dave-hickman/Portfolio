@@ -4,12 +4,11 @@
         display: flex;
         justify-content: center;
         gap: 3%;
-   
         cursor: pointer;
       }
     
 
-.nav-options p {
+.nav-links {
     color: rgb(255, 76, 40);
     font-size: 1vw;
     font-weight: 500;
