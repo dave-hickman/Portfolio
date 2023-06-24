@@ -1,0 +1,23 @@
+.nav-options {
+        margin: 1%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        gap: 3%;
+   
+        cursor: pointer;
+      }
+    
+
+.nav-options p {
+    color: rgb(255, 76, 40);
+    font-size: 1vw;
+    font-weight: 500;
+    font-style: normal;
+    z-index: 2
+}
+
+.nav-options p:hover {
+    color: white
+ 
+}

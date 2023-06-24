@@ -1,0 +1,32 @@
+.homepage-container{
+    z-index: 2;
+    height: 100%;
+}
+
+.title-container {
+    margin: 30vh 10% 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    z-index: 2;
+  }
+
+h1{
+    position: relative;
+    font-size: 6vw;
+    font-weight: 500;
+    color: rgb(255, 246, 232);  
+    z-index: 2; 
+    background-color: none;
+}
+
+h2{
+    position: relative;
+    font-size: 2.5vw;
+    font-weight: 300;
+    color: rgb(255, 76, 40);
+    z-index: 2; 
+}
+
