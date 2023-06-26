@@ -1,0 +1,19 @@
+.projects-page {
+    z-index: 2;
+    max-width: 1280px;
+    margin: 4rem auto;
+
+}
+
+.projects-page-cards{
+    z-index: 2;
+    position: relative;
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.projects-page-title{
+    margin: 0 2rem;
+}

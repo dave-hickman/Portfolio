@@ -4,6 +4,7 @@
 
 .project-image{
     max-width: 100%;
+    z-index: 2;
 }
 
 .project-title{
