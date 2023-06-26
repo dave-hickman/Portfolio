@@ -1,7 +1,12 @@
 # My Portfolio
 This is my portfolio created using Typescript and React
 
-## Getting started
+## Running this project locally
+
+Live Version:
+
+[Dave Hickman Portolio] (https://davehickmandev.co.uk)
+
 To run this project locally, you will need to fork this repo or fork as follows:
 
 git clone https://github.com/dave-hickman/Portfolio
