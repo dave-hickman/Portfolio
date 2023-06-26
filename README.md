@@ -5,7 +5,7 @@ This is my portfolio created using Typescript and React
 
 Live Version:
 
-[Dave Hickman Portolio] (https://davehickmandev.co.uk)
+[Dave Hickman Portfolio](https://davehickmandev.co.uk)
 
 To run this project locally, you will need to fork this repo or fork as follows:
 
