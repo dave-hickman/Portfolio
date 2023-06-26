@@ -13,10 +13,10 @@ npm run dev
 
 ## Dependencies
 
-*React
-*React-DOM
-*React-icons
-*React-router-dom
-*React-spring
-*Vite
-*ESLint
+* React
+* React-DOM
+* React-icons
+* React-router-dom
+* React-spring
+* Vite
+* ESLint
