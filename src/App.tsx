@@ -7,6 +7,18 @@ import Navbar from "./Components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
+import ProjectsPage from "./Pages/ProjectsPage";
+import GYSI from "./assets/Get Your Steps In.png";
+import davesNews from "./assets/Dave's News.png";
+import gasLeak from "./assets/Gas Leak.png"
+
+interface Project {
+  image: string;
+  name: string;
+  tech: string;
+  desc: string;
+}
+
 
 function App() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -15,6 +27,27 @@ function App() {
     const { clientX, clientY } = e;
     setPosition({ x: clientX, y: clientY });
   };
+
+  const currentProjects: Project[] = [
+    {
+      image: GYSI,
+      name: "Get Your Steps In",
+      tech: "React, React-Three-Fiber, Mongo.db, CSS",
+      desc: "Full-stack immersive 3D platform game employing physics and 3D graphics with only javascript in the browser via React-Three-Fiber, a React wrapper for the Three.js library. All time and weekly high scores are submitted and saved into a mongo.db database.",
+    },
+    {
+      image: davesNews,
+      name: "Dave's News",
+      tech: "React, Axios, PostgreSQL, CSS",
+      desc: "Full-stack news application using React on the front end making API calls to a PostgreSQL back end database. Comments can be added and deleted from individual articles, and articles can be sorted by date, comment count and votes in ascending or descending order.",
+    },
+    {
+      image: gasLeak,
+      name: "Gas Leak",
+      tech: "React, Axios, Chart.js, CSS ",
+      desc: "Front end application which allows you to calculate the real-time cost of a transaction on the Ethereum network (gas fee), by choosing your desired speed and the type of transaction you would like to make. This app simplifies what can be a confusing process and provides a graph to indicate the most cost-effective time to make a transaction.",
+    },
+  ];
 
   const cursorAnimation = useSpring({
     top: `${position.y}px`,
@@ -28,9 +61,11 @@ function App() {
     <div onPointerMove={handlePointerMove}>
       <Navbar />
       <Routes>
-      <Route path={`/`} element={<Homepage />}></Route>
+      <Route path={`/`} element={<Homepage currentProjects={currentProjects}/>}></Route>
       <Route path={`/about`} element={<About />}></Route>
       <Route path={`/contact`} element={<Contact />}></Route>
+      <Route path={`/projects`} element={<ProjectsPage currentProjects={currentProjects} />}></Route>
+
       </Routes>
       <animated.div className="cursor" style={cursorAnimation}></animated.div>
       <Blur />

@@ -14,13 +14,16 @@ const Navbar = () => {
   const handleHomeClick = () => {
     navigate('/')
   }
+  const handleProjectsClick = () => {
+    navigate('/projects')
+  }
 
   return (
     <nav>
       <section className="nav-options">
         <p className="nav-links" onClick={handleHomeClick}>Home</p>
         <p className="nav-links" onClick={handleAboutClick}>About</p>
-        <p className="nav-links" >Projects</p>
+        <p className="nav-links" onClick={handleProjectsClick}>Projects</p>
         <p className="nav-links" onClick={handleContactClick}>Contact</p>
       </section>
     </nav>

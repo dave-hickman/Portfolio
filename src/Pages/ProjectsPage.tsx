@@ -1,6 +1,4 @@
-import "../Styling/Projects.css";
-
-import SingleProject from "./SingleProject";
+import SingleProject from "../Components/SingleProject";
 
 interface Project {
     image: string;
@@ -9,21 +7,20 @@ interface Project {
     desc: string;
   }
   
-  interface ProjectsProps {
+  interface ProjectsPageProps {
     currentProjects: Project[];
   }
 
-const Projects = ({currentProjects}: ProjectsProps) => {
-  
-  return (
-    <section className="projects-container">
+const ProjectsPage = ({currentProjects}:ProjectsPageProps ) => {
+    return (
+        <>
+        <h1>Projects</h1>
         {currentProjects.map((project)=> {
             return(
                  <SingleProject key={project.name} project={project}/>)
         })}
- 
-    </section>
-  );
-};
+        </>
+    )
+}
 
-export default Projects;
+export default ProjectsPage
