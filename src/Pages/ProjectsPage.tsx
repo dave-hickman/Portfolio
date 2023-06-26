@@ -7,6 +7,9 @@ interface Project {
     name: string;
     tech: string;
     desc: string;
+    link: string;
+    fe: string;
+    be: string | null;
   }
   
   interface ProjectsPageProps {

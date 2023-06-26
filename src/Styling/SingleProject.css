@@ -1,5 +1,6 @@
 .indiv-project-container{
-    z-index: 2
+    z-index: 2;
+    height: 50%;
 }
 
 .project-image{
@@ -9,16 +10,50 @@
 
 .project-title{
     color: rgb(255, 246, 232); 
-    font-size: 2rem;
+    font-size: 2vw;
     font-weight: 600;
 }
 
 .project-tech{
+    font-size: 1.1vw;
     color: rgb(255, 76, 40);
 }
 
 .project-desc{
     color: rgb(255, 246, 232); 
-    font-size: 1rem;
+    font-size: 1.1vw;
     font-weight: 400;
 }
+
+.links-container{
+    display: flex;
+    gap:1rem;
+}
+.links{
+    display: flex;
+    gap: .5rem;
+}
+
+a:link {
+    color: rgb(255, 246, 232); 
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(255, 246, 232); 
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: rgb(255, 246, 232); 
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: rgb(255, 246, 232); 
+    background-color: transparent;
+    text-decoration: underline;
+  }
