@@ -20,3 +20,13 @@
     color: rgb(255, 246, 232); 
  
 }
+
+@media (max-width: 640px){
+    .nav-options {
+        margin: 5% 0;
+        
+      }
+    .nav-links {
+        font-size: 4vw;
+    }
+  }

@@ -57,3 +57,33 @@ a:link {
     background-color: transparent;
     text-decoration: underline;
   }
+
+  @media (max-width: 640px){
+    .indiv-project-container{
+      margin: 5% 0;
+    }
+
+    .project-title{ 
+        font-size: 8vw;
+        font-weight: 600;
+    }
+    
+    .project-tech{
+        font-size: 4vw;
+  
+    }
+    
+    .project-desc{
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    
+    .links-container{
+        display: flex;
+        gap:1rem;
+    }
+    .links{
+        display: flex;
+        gap: .5rem;
+    }
+  }

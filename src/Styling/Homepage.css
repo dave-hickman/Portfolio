@@ -1,10 +1,10 @@
-.homepage-containerm{
+.homepage-container{
     z-index: 2;
     height: 100%;
 }
 
 .title-container {
-    margin: 30vh 10% 30vh;
+    margin: 30vh 10% 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,5 +31,16 @@ h2{
     z-index: 2; 
 }
 
+@media (max-width: 640px){
+    .title-container{
+        margin: 30vh 10% 30vh;
+    }
+    h1{
+        font-size: 8vw;
+    }
+    h2{
+        font-size: 5vw;
+    }
+}
 
 

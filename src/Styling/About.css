@@ -24,3 +24,10 @@
     background-color: none;
     margin: 1rem 0
 }
+
+@media (max-width: 640px){
+    .about-text-container p, .contact-text-container p {
+        font-size: 4vw;
+    
+    }
+  }

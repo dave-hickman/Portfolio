@@ -17,3 +17,14 @@
 .projects-page-title{
     margin: 0 2rem;
 }
+
+@media (max-width: 640px){
+    .projects-page-cards{
+        flex-direction: column;
+        margin: 0 2rem;
+    }
+    .projects-page {
+        margin: 2rem auto;
+    
+    }
+  }

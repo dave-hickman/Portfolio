@@ -1,9 +1,16 @@
 .projects-container{
     z-index: 2;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap:5%;
     margin: 0 10%;
+  }
+
+  @media (max-width: 640px){
+    .projects-container{
+      flex-direction: column;
+      margin: 20vh 10%;
+    }
   }
