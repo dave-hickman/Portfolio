@@ -11,7 +11,6 @@ import ProjectsPage from "./Pages/ProjectsPage";
 import GYSI from "./assets/Get Your Steps In.png";
 import EV from "./assets/Screenshot 2023-07-11 at 11.06.15.png"
 import davesNews from "./assets/Dave's News.png";
-import gasLeak from "./assets/Gas Leak.png"
 
 interface Project {
   image: string;
