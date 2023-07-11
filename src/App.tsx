@@ -9,6 +9,7 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import ProjectsPage from "./Pages/ProjectsPage";
 import GYSI from "./assets/Get Your Steps In.png";
+import EV from "./assets/Screenshot 2023-07-11 at 11.06.15.png"
 import davesNews from "./assets/Dave's News.png";
 import gasLeak from "./assets/Gas Leak.png"
 
@@ -52,12 +53,12 @@ function App() {
       be: "https://github.com/dave-hickman/news_project"
     },
     {
-      image: gasLeak,
-      name: "Gas Leak",
-      tech: "React, Axios, Chart.js, CSS ",
-      desc: "Front end application which allows you to calculate the real-time cost of a transaction on the Ethereum network (gas fee), by choosing your desired speed and the type of transaction you would like to make. This app simplifies what can be a confusing process and provides a graph to indicate the most cost-effective time to make a transaction.",
-      link: "https://gas-leak.vercel.app/",
-      fe: "https://github.com/dave-hickman/Ethereum-Transaction-Calculator",
+      image: EV,
+      name: "EV Charging Point Finder",
+      tech: "React, Typescript, Next.js, Tailwind",
+      desc: "Frontend application which takes your current location, or any location of your choice, and displays a map of all the EV charging points in the area. Clicking on any charging point provides info about the charging point and displays the quickest route from your chosen location.",
+      link: "https://ev-charging-point-finder.vercel.app/",
+      fe: "https://github.com/dave-hickman/EV-Charging-Point-Finder",
       be: null
     },
   ];
@@ -65,9 +66,9 @@ function App() {
   const cursorAnimation = useSpring({
     top: `${position.y}px`,
     left: `${position.x}px`,
-    tension: 2, // Adjust the tension value to control the stiffness of the spring
-    friction: 1000000, // Adjust the friction value to control the damping of the spring
-    duration: 500, // Total duration of the animation
+    tension: 2,
+    friction: 1000000, 
+    duration: 500,
   });
 
   return (
