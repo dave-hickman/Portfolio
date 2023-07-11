@@ -5,6 +5,9 @@
 
 .project-image{
     max-width: 100%;
+    width: 30rem;
+    height: 12rem;
+    object-fit: contain;
     z-index: 2;
 }
 
@@ -61,6 +64,11 @@ a:link {
   @media (max-width: 640px){
     .indiv-project-container{
       margin: 5% 0;
+    }
+
+    .project-image{
+        width: 100%;
+        height: 100%;
     }
 
     .project-title{ 
