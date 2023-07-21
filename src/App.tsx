@@ -10,6 +10,7 @@ import Contact from "./Pages/Contact";
 import ProjectsPage from "./Pages/ProjectsPage";
 import GYSI from "./assets/Get Your Steps In.png";
 import EV from "./assets/Screenshot 2023-07-11 at 11.06.15.png"
+import AIVA from "./assets/AI Voice Assistant.png"
 import davesNews from "./assets/Dave's News.png";
 
 interface Project {
@@ -59,6 +60,15 @@ function App() {
       link: "https://ev-charging-point-finder.vercel.app/",
       fe: "https://github.com/dave-hickman/EV-Charging-Point-Finder",
       be: null
+    },
+    {
+      image: AIVA,
+      name: "AI Voice Assistant",
+      tech: "React, Javascript, Tailwind",
+      desc: "Full-stack application which allows you to use your voice to ask questions to an AI Voice Assistant which responds by talking back to you with an answer pulled from OpenAI's API.",
+      link: "https://ai-voice-assistant-kappa.vercel.app/",
+      fe: "https://github.com/dave-hickman/AI-Voice-Assistant",
+      be: "https://github.com/dave-hickman/ai-voice-assistant-backend"
     },
   ];
 
